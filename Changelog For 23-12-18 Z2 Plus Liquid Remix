@@ -1,0 +1,205 @@
+=======================
+     12-23-2018
+=======================
+
+
+   * hardware/libhardware/
+9c339f7b power: Add new power hints
+
+=======================
+     12-22-2018
+=======================
+
+
+   * frameworks/base/
+f439a01b6c0 Fix Signature Spoofing
+34c94c71b9b KeyguardHostView: Auto face unlock v2 for pie
+e0bd23236b4 FontService: Update privapp-permissions-platform.xml
+195088f157b base: FontService: Add a error for non-supported font packages
+4037aa43b78 telephony: Make IMS method updateToState accessible
+d196dfba74e DreamBackend: Fix launching settings
+e8c85efc319 systemui: fix liquid logo hide animation
+ac230c4cb2d Update the screenState for keyguard while screen turning on
+00dda24b460 Delete the check of mService when BluetoothHeadset doUnbind
+75aeabc8e9c Make services with uid 1000 restart if their host process crashes
+bff0f3cddb2 ConnectionRecord: make SystemProcess Watchdog when clean app process
+341579f2da2 Change the listening logic of MtpStorageManager
+4a52eb5fd87 Fix motion event offset of DecorView is moved in the window
+11739f07344 BoostFramework: Add debug to hide logcat spam on devices without QPerformance
+4749d35404c SystemUI: allow devices override audio panel location [1/2]
+f4e8752cac8 extended audio panel [1/2]
+328965e7865 Telephony: NPE observed in Settings when click on Search settings
+e0fecb0dd52 Fix showing empty signal strength for TD-SCDMA
+f2b729177f9 Fix property setting with failure
+003f7c0457a frameworks/base: Add HDMI hotplug handling
+ee22da80e6b Check if EIMS when confirming network
+0a6b86bca07 net: modify connecitvity rematch logic to support MSIM devices
+3e2a7fe40f7 base: fix mediascanner access permissions to external storage
+e85bffa56bb BoostFramework: silence exception about class not found
+a2dc4262e02 Modify game detection logic
+956dbc5ae25 Add perfGetFeedback api support from framework
+f51b2cee1e0 Re-Enable Burn-In Controllers for NavBar
+81d30b9f18f Fix Pie NavBar Full Gestures.
+1cfdaa3789e Full nav gesture: Poor Hack to Get Everything working
+75ef7ce8dca base: Keyguard: Hide check button when using PIN quick unlock
+d4194748c7a Increase LongPress Timeout
+b1a0b829d0a Revert "aapt: Default to 0 compression ratio"
+1fdb3beed34 Select the proper request list size
+d58e151b628 SystemUI: Fix IllegalArgumentException when SystemUI do dumping
+6bbdf146fc1 Avoid NPE in resumeTopActivityInnerLocked()
+624cbd2a004 Fix Framework Reboot due to invalid display
+fb79b2f1340 SystemUI: fix notification overlap with PIN screen
+3c9cec6d233 ResourceManager: Disable APK Assets cache
+c664718fddf BoostFramework: Implement asynchronous processing of perflocks
+ae88225e54e SmartNav: Update Kill App action
+30a8db8998d PanelPorn 8.1: Power menu alpha and dim (1/2)
+25878d9f7e0 base: Add special captive portal servers for chinese
+27bfbe1162d Support the perflock request from system/priv apps whose domain are untrusted
+9409d56e53d Add Game boost & modify launchboostv2 invocation.
+c1c6f5d38d5 Disable swipe boost and preferred apps for certain cases
+78521c03ca7 Fling/Pre-fling Boost: Call perf boost from System Server context
+7db1bde5080 BoostFramework: Clean up code
+670a9a12bd9 IOP : Adding support for UXPerf Class
+15eb4f4b5fd BoostFramework: Move property checks to pass sepolicy requirements.
+710ef444c00 IOP/UXE: This change is to enable the IOP and UXE
+4e07425783c Precise new activity boost.
+682263ce8a0 Reorder boosts for quick ramp up
+8cf0983f1e5 Add perf hint for screen rotation animation
+953c1a41d98 Add perf hint for rotation latency
+5f6df4273c9 framework/base: add parallel verifyV1
+0a84a4e6d52 add perf_service into system_process.
+337f8c6ceef BoostFramework: To Enhance performance.
+9a33393c5ae Lockscreen Visualizer: Check for keyguard fading away
+1305820dd39 Fixes for lockscreen visualizer
+8d5e9ad90f4 Record screen in high quality
+c5f6b58df5b Battery charge warning [1/2]
+a6824754266 Add Option to Enable/Disable ScreenShot & ScreenRecord Shortcut [1/2]
+94f527bb683 Clean up reloading assets on overlay change
+f6831525974 Notifications: Do not use theme context for remote views
+490203d26de Improvements in loading notifications with dark mode
+5dd5087fd73 Reload more assets on overlay change
+7215124daeb Support for appending "standalone" WHERE chunks
+0d582555f71 Bind update() args as Object[] for performance
+7b806360306 Extend SQLiteQueryBuilder for update and delete
+14f0805c523 Execute "strict" queries with extra parentheses
+f231540ebce Revert SQLiteQueryBuilder for now
+610e0c420d1 Execute "strict" queries with extra parentheses
+7ef55811829 Add support for appending standalone phrases
+14636a06f39 GROUP BY and HAVING aren't ready to be strict
+e3170c9c2cf Extend SQLiteQueryBuilder for update and delete
+2780e00a546 Revert "Frameworks/base: Compiled-classes support"
+a89299376c4 Fix ExifInterface for .heic when meta is at the end
+d1a48facf84 LockscreenVisualizer: Use offload thread
+3c8ff788e48 FontService: fix null object reference
+fdb62770c7d Statusbar clock and icon fixes
+ac481260ae0 CollapsedStatusbar: Fix phantom spaces in status bar
+9694f1e089c fwb: disable Aggressive trim settings by default
+48baab927a6 Smartbar pixel animation: Ability to customize the dots [1/3]
+17ba3377681 Smarbar Pixel Navbar Animation Duration Settings [1/3]
+f7bb13389da Option to use accent color for pulse [2/3]
+09a8d5f100b Revert "Introduce Ambient Indication Interface"
+0119296de6f Revert "Ambient Play: Do nothing while we're offline."
+
+   * packages/apps/LiquidLounge/
+4e785b4 lounge: remove ambient now playing
+
+   * packages/apps/Settings/
+d53bdec9c7 Revert "Add preference for Ambient Play"
+c336985e0d Revert "Ambient Play settings improvements"
+c9aaa77730 Revert "AmbientPlay: Introduce history manager [4/4]"
+b32a9df478 Revert "Now Playing History MD2 redesign"
+be8b4ef789 Revert "Now playing history: Fix BG of entry dialog in Dark UI"
+
+   * packages/apps/SmartNavSettings/
+a7853a8 Merge pull request #1 from DouglasGomes123/pie
+
+   * vendor/liquid/
+ea7a0fbf Revert "AmbientPlay: Introduce history manager [2/4]"
+
+=======================
+     12-21-2018
+=======================
+
+
+   * packages/apps/SmartNavSettings/
+1e6f672 Add translations pt-BR
+
+=======================
+     12-20-2018
+=======================
+
+
+   * build/make/
+39596df24 soong_config: Allow extension of valid gralloc 1.0 buffer usage bits
+de1b7d8d8 Revert "Build: Support for compiled-classes file"
+
+   * build/soong/
+3b8f9834 Gralloc2: Allow invalid usage bits
+
+   * frameworks/av/
+b62269ea5 libmedia: Add 1440p camcorder quality
+87078958d mediascanner: Accept .opus file extension.
+f5f40236e libstagefright: Allow HFR-60 in HAL-3 recording
+cb21a7cbc stagefrightrecorder: don't modify timeOffset in surface source case
+4146509b3 Camera: Add support for manual 3A.
+8952e45a9 CamcorderProfiles: Add new camcorder profiles
+d4b551f35 libcameraservice: Don't pass NULL args on setCallbacks call
+bb4d19c71 CameraService: Fix deadlock in binder death cleanup.
+adade9493 Camera: Skip stream size check for whitelisted apps.
+2de7efeb0 Tuning of Binder buffer for various HALs
+5c113419f Audio: Set Deep Buffer flag for music stream.
+2a4d9afe1 audiopolicy: reset capture state when input is closed
+ee7caa5af audio: add support to enable track offload using direct output
+
+   * frameworks/native/
+e36183a28 gralloc2: Extend the list of valid gralloc bits
+89ea6a5b9 Gralloc2: Mark some gralloc bits as valid
+f7929781f sf: Add support for multiple displays
+
+   * packages/apps/LiquidLounge/
+dadd2b8 Hide notch for non-notch devices
+6e2d350 PanelPorn: Power menu alpha and dim (2/2)
+72cd734 Allow devices override audio panel location [2/2]
+f381427 extended audio panel [2/2]
+24b7c0d Remove doze dependancy
+24e1aec Add Option to Enable/Disable ScreenShot & ScreenRecord Shortcut [1/2]
+c7b46fd lounge: update gesture anywhere position
+2b95160 Fix network traffic type
+
+   * packages/apps/Settings/
+8487eba0f0 Kang Build Date Info from ArrowOS
+eaa2334456 Settings: Use correct icon for ring volume
+4f388298e4 show4GForLTE Fix
+c0b07a3ea5 settings: fix liquid lounge logo size
+3a579a07e8 Battery charge warning [2/2]
+223d12cfe2 Revert "Cleanup ambient play history [2/3]"
+ef58197e75 Revert "settings: disable full nav gestures"
+
+   * packages/apps/SmartNav/
+9576db5 Navigator: Add Burn-In Controls Shift to public methods
+2eb96c1 Navigator: Add Gesture nav to public methods
+6cedc53 Pulse: Fix setting correct renderer color
+3156638 Smartbar pixel animation: Ability to customize the dots [2/3]
+98bb6db Make Smartbar Pixel Animation Durations Customizable [2/3]
+aee3926 SmartNav: Let's use System colors
+1e3ae55 DUI: Fix pulse opacity on CoverArtColor and Accent
+ff52564 Option to use accent color for pulse [1/3]
+
+   * packages/apps/SmartNavSettings/
+22d61f2 Add back the stock nav settings
+65d44f3 Option to use accent color for pulse [3/3]
+8c52dea Smartbar pixel animation: Ability to customize the dots [3/3]
+46ad53c Settings: Make Smartbar Pixel Animation Durations Customizable [3/3]
+
+   * system/core/
+ae708bed9 core: Bring back custom charger percent text
+3369053af Allow adb root even in no debuggable builds
+
+   * vendor/liquid/
+227b1b88 overlay: Define Google Assistant as default
+943e27c3 vendor: increase build number (10.0.3)
+7e57b663 Add support for VZW VoLTE and Wifi Calling
+
+
+
+
